@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Mi lista de tareas</h1>
+            <p>Organiza tu día y alcanza tus objetivos.</p>
+        </header>
+
+        <section class="task-form">
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="¿Qué necesitas hacer?"
+                maxlength="100"
+            >
+
+            <button id="addButton">+ Agregar</button>
+        </section>
+
+        <section class="task-info">
+            <p>Mis actividades</p>
+            <span id="taskCounter">0 tareas pendientes</span>
+        </section>
+
+        <nav class="filters">
+            <button class="filter active" data-filter="all">Todas</button>
+            <button class="filter" data-filter="pending">Pendientes</button>
+            <button class="filter" data-filter="completed">Completadas</button>
+        </nav>
+
+        <ul id="taskList"></ul>
+
+        <p id="emptyMessage">¡No tienes tareas todavía!</p>
+
+        <footer>
+            <p>Mi To-Do List | Organiza tu tiempo</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
